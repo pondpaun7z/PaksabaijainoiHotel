@@ -1,0 +1,12 @@
+c:\users\pondpaun7z\documents\visual studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\bin\Debug\PaksabaijainoiHotel.exe.config
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\bin\Debug\PaksabaijainoiHotel.exe
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\bin\Debug\PaksabaijainoiHotel.pdb
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.csprojResolveAssemblyReference.cache
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.Properties.Resources.resources
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.csproj.GenerateResource.Cache
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.exe
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.pdb
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.Form1.resources
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.Form3.resources
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.Form4.resources
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.StartProgramForm.resources
