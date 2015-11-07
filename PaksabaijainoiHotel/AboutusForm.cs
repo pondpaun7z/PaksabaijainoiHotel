@@ -10,15 +10,16 @@ using System.Windows.Forms;
 
 namespace PaksabaijainoiHotel
 {
-    public partial class StartProgramForm : Form
+    public partial class AboutusForm : Form
     {
         Form1 menuForm;
-        public StartProgramForm()
+
+        public AboutusForm()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
-        private void menu_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             menuForm = new Form1();
             this.Hide();

@@ -15,11 +15,11 @@ namespace PaksabaijainoiHotel
 
         Form3 rateRoomForm = new Form3();
         Form4 calculatePriceForm = new Form4();
+        AboutusForm aboutusFrom = new AboutusForm();
         
         public Form1()
         {
-            InitializeComponent();
-            Form1Aboutus.Visible = false;
+            InitializeComponent();            
         }
 
         // Room rate Button
@@ -42,12 +42,9 @@ namespace PaksabaijainoiHotel
         // About us Button
         private void aboutus_Click_1(object sender, EventArgs e)
         {
-            Form1Aboutus.Visible = true;
-        }
-
-        private void form1Back_Click(object sender, EventArgs e)
-        {
-            Form1Aboutus.Visible = false;
+            this.Hide();
+            aboutusFrom.ShowDialog();
+            this.Close();
         }
 
         // Exit Button

@@ -48,11 +48,12 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Goldenrod;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(246, 171);
+            this.button1.Location = new System.Drawing.Point(250, 219);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 55);
+            this.button1.Size = new System.Drawing.Size(123, 64);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.calaulate_Click);
@@ -63,9 +64,9 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(12, 351);
+            this.button2.Location = new System.Drawing.Point(12, 335);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(79, 38);
+            this.button2.Size = new System.Drawing.Size(95, 54);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.back2Menu_Click);
@@ -73,10 +74,15 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(227, 132);
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox1.Location = new System.Drawing.Point(238, 166);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.textBox1.MaxLength = 1000000;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 20);
+            this.textBox1.Size = new System.Drawing.Size(147, 23);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // showRoom
             // 
@@ -99,7 +105,7 @@
             // 
             this.totalRoom.AutoSize = true;
             this.totalRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.totalRoom.Location = new System.Drawing.Point(298, 328);
+            this.totalRoom.Location = new System.Drawing.Point(289, 328);
             this.totalRoom.Name = "totalRoom";
             this.totalRoom.Size = new System.Drawing.Size(60, 24);
             this.totalRoom.TabIndex = 8;
@@ -109,11 +115,16 @@
             // 
             this.backToCal.BackColor = System.Drawing.Color.Transparent;
             this.backToCal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backToCal.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
+            this.backToCal.FlatAppearance.BorderSize = 0;
+            this.backToCal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.backToCal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
+            this.backToCal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.backToCal.ForeColor = System.Drawing.Color.Transparent;
             this.backToCal.Image = ((System.Drawing.Image)(resources.GetObject("backToCal.Image")));
-            this.backToCal.Location = new System.Drawing.Point(496, 347);
+            this.backToCal.Location = new System.Drawing.Point(10, 344);
             this.backToCal.Name = "backToCal";
-            this.backToCal.Size = new System.Drawing.Size(76, 42);
+            this.backToCal.Size = new System.Drawing.Size(90, 48);
             this.backToCal.TabIndex = 7;
             this.backToCal.UseVisualStyleBackColor = false;
             this.backToCal.Click += new System.EventHandler(this.backToCal_Click);
