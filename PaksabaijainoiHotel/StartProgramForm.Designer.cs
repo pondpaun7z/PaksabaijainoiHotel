@@ -52,7 +52,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "StartProgramForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StartProgramForm";
+            this.Text = "Paksabaijainoi Hotel";
             this.ResumeLayout(false);
 
         }

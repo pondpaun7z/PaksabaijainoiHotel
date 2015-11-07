@@ -33,9 +33,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Form1Aboutus = new System.Windows.Forms.Panel();
-            this.form1Back = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.form1Back = new System.Windows.Forms.Button();
             this.Form1Aboutus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -86,15 +86,16 @@
             this.Form1Aboutus.Size = new System.Drawing.Size(584, 401);
             this.Form1Aboutus.TabIndex = 5;
             // 
-            // form1Back
+            // pictureBox1
             // 
-            this.form1Back.Image = ((System.Drawing.Image)(resources.GetObject("form1Back.Image")));
-            this.form1Back.Location = new System.Drawing.Point(254, 334);
-            this.form1Back.Name = "form1Back";
-            this.form1Back.Size = new System.Drawing.Size(77, 42);
-            this.form1Back.TabIndex = 0;
-            this.form1Back.UseVisualStyleBackColor = true;
-            this.form1Back.Click += new System.EventHandler(this.form1Back_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-7, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(600, 400);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -107,15 +108,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.roomRate_Click);
             // 
-            // pictureBox1
+            // form1Back
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-7, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(600, 400);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.form1Back.BackColor = System.Drawing.Color.Transparent;
+            this.form1Back.Image = ((System.Drawing.Image)(resources.GetObject("form1Back.Image")));
+            this.form1Back.Location = new System.Drawing.Point(229, 331);
+            this.form1Back.Name = "form1Back";
+            this.form1Back.Size = new System.Drawing.Size(140, 54);
+            this.form1Back.TabIndex = 0;
+            this.form1Back.UseVisualStyleBackColor = false;
+            this.form1Back.Click += new System.EventHandler(this.form1Back_Click);
             // 
             // Form1
             // 
@@ -131,7 +133,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Paksabaijainoi Hotel";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Form1Aboutus.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -144,9 +146,9 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel Form1Aboutus;
-        private System.Windows.Forms.Button form1Back;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button form1Back;
     }
 }
 

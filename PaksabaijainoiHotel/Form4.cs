@@ -27,6 +27,13 @@ namespace PaksabaijainoiHotel
         {
             InitializeComponent();
             showRoom.Visible = false;
+
+            cost.BackColor = Color.Transparent;
+            room1.BackColor = Color.Transparent;
+            room2.BackColor = Color.Transparent;
+            room3.BackColor = Color.Transparent;
+            room4.BackColor = Color.Transparent;
+            totalRoom.BackColor = Color.Transparent;
         }
 
         private void calaulate_Click(object sender, EventArgs e)
@@ -40,6 +47,9 @@ namespace PaksabaijainoiHotel
             {
                 MessageBox.Show("Please enter number.");
                 errorProvider1.SetError(textBox1, "Please enter number.");
+            } else if (int.Parse(textBox1.Text) < 1 || int.Parse(textBox1.Text) > 1000000) {
+                MessageBox.Show("Please enter number in range(1 - 1,000,000).");
+                errorProvider1.SetError(textBox1, "Please enter number in range(1 - 1,000,000)");
             } else
             {
                 errorProvider1.SetError(textBox1, null);
@@ -92,6 +102,7 @@ namespace PaksabaijainoiHotel
             room2.Text = nMiddleroom.ToString();
             room3.Text = nTwinroom.ToString();
             room4.Text = nSingleroom.ToString();
+            totalRoom.Text = (nBigroom + nMiddleroom + nTwinroom + nSingleroom).ToString();
         }
 
         // Back to menu [Button]
