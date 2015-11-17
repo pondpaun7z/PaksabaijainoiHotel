@@ -16,10 +16,11 @@ namespace PaksabaijainoiHotel
         Form3 rateRoomForm = new Form3();
         Form4 calculatePriceForm = new Form4();
         AboutusForm aboutusFrom = new AboutusForm();
-        
+        // Icon sizedIcon = new Icon(Properties.Resources.ResourceIcon, new Size(64, 64));
         public Form1()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            
         }
 
         // Room rate Button

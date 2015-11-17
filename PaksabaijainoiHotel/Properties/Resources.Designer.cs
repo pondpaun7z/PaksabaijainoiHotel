@@ -67,5 +67,7 @@ namespace PaksabaijainoiHotel.Properties
                 resourceCulture = value;
             }
         }
+
+        public static string ResourceIcon { get; internal set; }
     }
 }

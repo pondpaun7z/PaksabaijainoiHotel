@@ -62,9 +62,10 @@
             this.ClientSize = new System.Drawing.Size(584, 401);
             this.Controls.Add(this.menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StartProgramForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Paksabaijainoi Hotel";
+            this.Text = "- ● พั ก ส บ า ย จ่ า ย น้ อ ย ● -";
             this.ResumeLayout(false);
 
         }

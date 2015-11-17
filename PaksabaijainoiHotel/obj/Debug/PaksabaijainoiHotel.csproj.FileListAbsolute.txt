@@ -11,3 +11,4 @@ C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\Pa
 C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.Form4.resources
 C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.StartProgramForm.resources
 C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.AboutusForm.resources
+C:\Users\Pondpaun7z\Documents\Visual Studio 2015\Projects\PaksabaijainoiHotel\PaksabaijainoiHotel\obj\Debug\PaksabaijainoiHotel.Form5.resources
