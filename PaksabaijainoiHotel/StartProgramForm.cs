@@ -12,7 +12,7 @@ namespace PaksabaijainoiHotel
 {
     public partial class StartProgramForm : Form
     {
-        Form1 menuForm;
+        MenuForm menuForm;
         public StartProgramForm()
         {
             InitializeComponent();            
@@ -20,7 +20,7 @@ namespace PaksabaijainoiHotel
 
         private void menu_Click(object sender, EventArgs e)
         {
-            menuForm = new Form1();
+            menuForm = new MenuForm();
             this.Hide();
             menuForm.ShowDialog();
             this.Close();

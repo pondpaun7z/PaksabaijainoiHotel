@@ -12,7 +12,7 @@ namespace PaksabaijainoiHotel
 {
     public partial class AboutusForm : Form
     {
-        Form1 menuForm;
+        MenuForm menuForm;
 
         public AboutusForm()
         {
@@ -21,7 +21,7 @@ namespace PaksabaijainoiHotel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            menuForm = new Form1();
+            menuForm = new MenuForm();
             this.Hide();
             menuForm.ShowDialog();
             this.Close();

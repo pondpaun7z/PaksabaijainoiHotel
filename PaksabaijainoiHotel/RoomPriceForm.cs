@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace PaksabaijainoiHotel
 {
-    public partial class Form3 : Form
+    public partial class RoomPriceForm : Form
     {
-        Form1 menuForm;
-        Form4 calculateForm;
+        MenuForm menuForm;
+        CalculateForm calculateForm;
 
-        public Form3()
+        public RoomPriceForm()
         {
             InitializeComponent();
         }
 
         private void back2Menu_Click(object sender, EventArgs e)
         {
-            menuForm = new Form1();
+            menuForm = new MenuForm();
             this.Hide();
             menuForm.ShowDialog();
             this.Close();
@@ -30,7 +30,7 @@ namespace PaksabaijainoiHotel
 
         private void button2_Click(object sender, EventArgs e)
         {
-            calculateForm = new Form4();
+            calculateForm = new CalculateForm();
             this.Hide();
             calculateForm.ShowDialog();
             this.Close();

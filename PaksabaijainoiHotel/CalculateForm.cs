@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PaksabaijainoiHotel
 {
-    public partial class Form4 : Form
+    public partial class CalculateForm : Form
     {
         Room singleRoom = new Room(1, 500);
         Room twinRoom = new Room(2, 800);
@@ -21,10 +21,10 @@ namespace PaksabaijainoiHotel
         long totalPrice = 0;
         int nBigroom = 0, nMiddleroom = 0, nTwinroom = 0, nSingleroom = 0;
 
-        Form1 menuForm;
-        Form5 resultForm;
+        MenuForm menuForm;
+        ResultedForm resultForm;
 
-        public Form4()
+        public CalculateForm()
         {
             InitializeComponent();
         }
@@ -82,7 +82,10 @@ namespace PaksabaijainoiHotel
             totalPrice = (nBigroom * bigRoom.getPrice()) + (nMiddleroom * middleRoom.getPrice()) +
                     (nTwinroom * twinRoom.getPrice()) + (nSingleroom * singleRoom.getPrice());
 
-            resultForm = new Form5(nBigroom, nMiddleroom, nTwinroom, nSingleroom, totalPrice);
+            resultForm = new ResultedForm(nBigroom, nMiddleroom, nTwinroom, nSingleroom, totalPrice);
+            this.Hide();
+            resultForm.ShowDialog();
+            this.Close();
             setDataZero();
 
             
@@ -91,7 +94,7 @@ namespace PaksabaijainoiHotel
         // Back to menu [Button]
         private void back2Menu_Click(object sender, EventArgs e)
         {
-            menuForm = new Form1();
+            menuForm = new MenuForm();
             this.Hide();
             menuForm.ShowDialog();
             this.Close();

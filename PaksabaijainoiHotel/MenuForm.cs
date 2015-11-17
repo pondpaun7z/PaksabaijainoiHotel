@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
+
+
 
 namespace PaksabaijainoiHotel
 {
-    public partial class Form1 : Form
+    public partial class MenuForm : Form
     {
 
-        Form3 rateRoomForm = new Form3();
-        Form4 calculatePriceForm = new Form4();
+        RoomPriceForm rateRoomForm = new RoomPriceForm();
+        CalculateForm calculatePriceForm = new CalculateForm();
         AboutusForm aboutusFrom = new AboutusForm();
-        // Icon sizedIcon = new Icon(Properties.Resources.ResourceIcon, new Size(64, 64));
-        public Form1()
+        
+        public MenuForm()
         {
             InitializeComponent();
             

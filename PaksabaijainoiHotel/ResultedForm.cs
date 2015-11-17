@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace PaksabaijainoiHotel
 {
-    public partial class Form5 : Form
+    public partial class ResultedForm : Form
     {
-        public Form5(int nBigroom, int nMiddleroom, int nTwinroom, int nSingleroom, long totalPrice)
+        public ResultedForm(int nBigroom, int nMiddleroom, int nTwinroom, int nSingleroom, long totalPrice)
         {
             InitializeComponent();
             cost.Text = totalPrice.ToString();
-            room1.Text = nBigroom.ToString();
-            room2.Text = nMiddleroom.ToString();
-            room3.Text = nTwinroom.ToString();
-            room4.Text = nSingleroom.ToString();
+            room4.Text = nBigroom.ToString();
+            room3.Text = nMiddleroom.ToString();
+            room2.Text = nTwinroom.ToString();
+            room1.Text = nSingleroom.ToString();
             totalRoom.Text = (nBigroom + nMiddleroom + nTwinroom + nSingleroom).ToString();
         }
 
         private void backToCal_Click(object sender, EventArgs e)
         {
-            Form4 inputForm = new Form4();
+            CalculateForm inputForm = new CalculateForm();
             this.Hide();
             inputForm.ShowDialog();
             this.Close();
