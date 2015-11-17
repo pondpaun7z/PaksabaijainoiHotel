@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,12 +32,12 @@ namespace PaksabaijainoiHotel
 
         private void calaulate_Click(object sender, EventArgs e)
         {
-          
+            
             if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 MessageBox.Show("Please enter number.");
                 errorProvider1.SetError(textBox1, "Please enter number.");
-            } else if (System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[a-zA-Z]"))
+            } else if (!System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[0-9]"))
             {
                 MessageBox.Show("Please enter number.");
                 errorProvider1.SetError(textBox1, "Please enter number.");
@@ -48,6 +49,11 @@ namespace PaksabaijainoiHotel
                 errorProvider1.SetError(textBox1, null);
                 calculateCheapest(textBox1);
             }
+        }
+
+        private void calculateCheapest(MaterialSingleLineTextField textBox1)
+        {
+            throw new NotImplementedException();
         }
 
         void calculateCheapest(TextBox textBox1)

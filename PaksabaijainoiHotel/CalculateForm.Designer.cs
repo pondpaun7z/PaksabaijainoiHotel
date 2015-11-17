@@ -40,9 +40,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(250, 219);
+            this.button1.Location = new System.Drawing.Point(231, 220);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 64);
             this.button1.TabIndex = 0;
@@ -64,15 +65,15 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.BackColor = System.Drawing.Color.Orange;
             this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox1.Location = new System.Drawing.Point(238, 166);
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.errorProvider1.SetIconAlignment(this.textBox1, System.Windows.Forms.ErrorIconAlignment.MiddleLeft);
+            this.textBox1.Location = new System.Drawing.Point(197, 166);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.MaxLength = 1000000;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(147, 28);
+            this.textBox1.Size = new System.Drawing.Size(185, 35);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -80,7 +81,7 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // Form4
+            // CalculateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -91,7 +92,8 @@
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form4";
+            this.MaximizeBox = false;
+            this.Name = "CalculateForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "- ● พั ก ส บ า ย จ่ า ย น้ อ ย ● -";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -104,7 +106,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

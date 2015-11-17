@@ -44,7 +44,7 @@
             // 
             this.totalRoom.AutoSize = true;
             this.totalRoom.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalRoom.Location = new System.Drawing.Point(289, 328);
+            this.totalRoom.Location = new System.Drawing.Point(286, 325);
             this.totalRoom.Name = "totalRoom";
             this.totalRoom.Size = new System.Drawing.Size(62, 26);
             this.totalRoom.TabIndex = 8;
@@ -54,7 +54,7 @@
             // 
             this.room4.AutoSize = true;
             this.room4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.room4.Location = new System.Drawing.Point(298, 288);
+            this.room4.Location = new System.Drawing.Point(290, 283);
             this.room4.Name = "room4";
             this.room4.Size = new System.Drawing.Size(56, 23);
             this.room4.TabIndex = 6;
@@ -64,7 +64,7 @@
             // 
             this.room3.AutoSize = true;
             this.room3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.room3.Location = new System.Drawing.Point(298, 246);
+            this.room3.Location = new System.Drawing.Point(290, 240);
             this.room3.Name = "room3";
             this.room3.Size = new System.Drawing.Size(56, 23);
             this.room3.TabIndex = 5;
@@ -73,10 +73,13 @@
             // cost
             // 
             this.cost.AutoSize = true;
+            this.cost.BackColor = System.Drawing.Color.Transparent;
             this.cost.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cost.Location = new System.Drawing.Point(289, 67);
+            this.cost.ForeColor = System.Drawing.Color.Black;
+            this.cost.Location = new System.Drawing.Point(283, 62);
             this.cost.Name = "cost";
-            this.cost.Size = new System.Drawing.Size(65, 26);
+            this.cost.Padding = new System.Windows.Forms.Padding(5);
+            this.cost.Size = new System.Drawing.Size(75, 36);
             this.cost.TabIndex = 1;
             this.cost.Text = "label3";
             // 
@@ -120,7 +123,7 @@
             // 
             this.room2.AutoSize = true;
             this.room2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.room2.Location = new System.Drawing.Point(298, 206);
+            this.room2.Location = new System.Drawing.Point(291, 197);
             this.room2.Name = "room2";
             this.room2.Size = new System.Drawing.Size(56, 23);
             this.room2.TabIndex = 4;
@@ -130,13 +133,13 @@
             // 
             this.room1.AutoSize = true;
             this.room1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.room1.Location = new System.Drawing.Point(298, 155);
+            this.room1.Location = new System.Drawing.Point(291, 151);
             this.room1.Name = "room1";
             this.room1.Size = new System.Drawing.Size(56, 23);
             this.room1.TabIndex = 3;
             this.room1.Text = "label4";
             // 
-            // Form5
+            // ResultedForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -145,7 +148,8 @@
             this.Controls.Add(this.showRoom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form5";
+            this.MaximizeBox = false;
+            this.Name = "ResultedForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "- ● พั ก ส บ า ย จ่ า ย น้ อ ย ● -";
             this.showRoom.ResumeLayout(false);
