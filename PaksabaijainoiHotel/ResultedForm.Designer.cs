@@ -42,46 +42,46 @@
             // 
             // totalRoom
             // 
-            this.totalRoom.AutoSize = true;
             this.totalRoom.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalRoom.Location = new System.Drawing.Point(286, 325);
+            this.totalRoom.Location = new System.Drawing.Point(254, 326);
             this.totalRoom.Name = "totalRoom";
-            this.totalRoom.Size = new System.Drawing.Size(62, 26);
+            this.totalRoom.Size = new System.Drawing.Size(115, 26);
             this.totalRoom.TabIndex = 8;
             this.totalRoom.Text = "label1";
+            this.totalRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // room4
             // 
-            this.room4.AutoSize = true;
             this.room4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.room4.Location = new System.Drawing.Point(290, 283);
+            this.room4.Location = new System.Drawing.Point(274, 283);
             this.room4.Name = "room4";
-            this.room4.Size = new System.Drawing.Size(56, 23);
+            this.room4.Size = new System.Drawing.Size(111, 23);
             this.room4.TabIndex = 6;
             this.room4.Text = "label4";
+            this.room4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // room3
             // 
-            this.room3.AutoSize = true;
             this.room3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.room3.Location = new System.Drawing.Point(290, 240);
+            this.room3.Location = new System.Drawing.Point(274, 240);
             this.room3.Name = "room3";
-            this.room3.Size = new System.Drawing.Size(56, 23);
+            this.room3.Size = new System.Drawing.Size(111, 23);
             this.room3.TabIndex = 5;
             this.room3.Text = "label4";
+            this.room3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cost
             // 
-            this.cost.AutoSize = true;
             this.cost.BackColor = System.Drawing.Color.Transparent;
             this.cost.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cost.ForeColor = System.Drawing.Color.Black;
-            this.cost.Location = new System.Drawing.Point(283, 62);
+            this.cost.Location = new System.Drawing.Point(254, 62);
             this.cost.Name = "cost";
             this.cost.Padding = new System.Windows.Forms.Padding(5);
-            this.cost.Size = new System.Drawing.Size(75, 36);
+            this.cost.Size = new System.Drawing.Size(131, 36);
             this.cost.TabIndex = 1;
             this.cost.Text = "label3";
+            this.cost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // showRoom
             // 
@@ -121,23 +121,23 @@
             // 
             // room2
             // 
-            this.room2.AutoSize = true;
             this.room2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.room2.Location = new System.Drawing.Point(291, 197);
+            this.room2.Location = new System.Drawing.Point(275, 197);
             this.room2.Name = "room2";
-            this.room2.Size = new System.Drawing.Size(56, 23);
+            this.room2.Size = new System.Drawing.Size(110, 23);
             this.room2.TabIndex = 4;
             this.room2.Text = "label4";
+            this.room2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // room1
             // 
-            this.room1.AutoSize = true;
             this.room1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.room1.Location = new System.Drawing.Point(291, 151);
+            this.room1.Location = new System.Drawing.Point(275, 151);
             this.room1.Name = "room1";
-            this.room1.Size = new System.Drawing.Size(56, 23);
+            this.room1.Size = new System.Drawing.Size(110, 23);
             this.room1.TabIndex = 3;
             this.room1.Text = "label4";
+            this.room1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ResultedForm
             // 
@@ -153,7 +153,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "- ● พั ก ส บ า ย จ่ า ย น้ อ ย ● -";
             this.showRoom.ResumeLayout(false);
-            this.showRoom.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace PaksabaijainoiHotel
@@ -28,6 +29,7 @@ namespace PaksabaijainoiHotel
         public CalculateForm()
         {
             InitializeComponent();
+            button1.Visible = false;
         }
 
         private void calaulate_Click(object sender, EventArgs e)
@@ -36,14 +38,11 @@ namespace PaksabaijainoiHotel
             if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 MessageBox.Show("Please enter number.");
-                errorProvider1.SetError(textBox1, "Please enter number.");
             } else if (!System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[0-9]"))
             {
                 MessageBox.Show("Please enter number.");
-                errorProvider1.SetError(textBox1, "Please enter number.");
             } else if (int.Parse(textBox1.Text) < 1 || int.Parse(textBox1.Text) > 1000000) {
                 MessageBox.Show("Please enter number in range(1 - 1,000,000).");
-                errorProvider1.SetError(textBox1, "Please enter number in range(1 - 1,000,000)");
             } else
             {
                 errorProvider1.SetError(textBox1, null);
@@ -51,10 +50,7 @@ namespace PaksabaijainoiHotel
             }
         }
 
-        private void calculateCheapest(MaterialSingleLineTextField textBox1)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         void calculateCheapest(TextBox textBox1)
         {
@@ -97,10 +93,44 @@ namespace PaksabaijainoiHotel
 
         private void Enter_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Enter)
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != (char)8;            
+
+            if (!string.IsNullOrWhiteSpace(textBox1.Text) &&
+                System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[0-9]") &&
+                int.Parse(textBox1.Text) >= 1 && int.Parse(textBox1.Text) <= 1000000)
             {
-                calaulate_Click(sender, e);
+                if (e.KeyChar == (char)Keys.Enter)
+                {
+                    calaulate_Click(sender, e);
+                }
             }
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+                
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                status.BackColor = Color.LightSeaGreen;
+                button1.Visible = false;
+                errorProvider1.SetError(status, null);
+            } else if (!System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[0-9]"))
+            {
+                status.BackColor = Color.Red;
+                button1.Visible = false;
+                errorProvider1.SetError(status, "Please enter number.");
+            } else if (int.Parse(textBox1.Text) < 1 || int.Parse(textBox1.Text) > 1000000) {
+                status.BackColor = Color.Red;
+                button1.Visible = false;
+                errorProvider1.SetError(status, "Please enter number in range(1 - 1,000,000)");
+            } else
+            {
+                status.BackColor = Color.Chartreuse;
+                button1.Visible = true;
+                errorProvider1.SetError(status, null);
+            }
+
         }
 
 

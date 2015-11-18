@@ -46,7 +46,7 @@
             this.button4.Location = new System.Drawing.Point(259, 142);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(223, 58);
-            this.button4.TabIndex = 3;
+            this.button4.TabIndex = 2;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.calculate_Click);
             // 
@@ -60,7 +60,7 @@
             this.button3.Location = new System.Drawing.Point(259, 214);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(223, 58);
-            this.button3.TabIndex = 2;
+            this.button3.TabIndex = 3;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.aboutus_Click_1);
             // 
@@ -74,7 +74,7 @@
             this.button2.Location = new System.Drawing.Point(261, 282);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(223, 58);
-            this.button2.TabIndex = 1;
+            this.button2.TabIndex = 4;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.exit_Click);
             // 
@@ -89,7 +89,7 @@
             this.button1.Location = new System.Drawing.Point(259, 70);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(223, 58);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.roomRate_Click);
             // 
