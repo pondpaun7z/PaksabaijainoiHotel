@@ -93,9 +93,16 @@ namespace PaksabaijainoiHotel
             resultForm.ShowDialog();
             this.Close();
             setDataZero();
-
-            
         }
+
+        private void Enter_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                calaulate_Click(sender, e);
+            }
+        }
+
 
         // Back to menu [Button]
         private void back2Menu_Click(object sender, EventArgs e)

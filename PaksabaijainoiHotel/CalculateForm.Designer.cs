@@ -76,6 +76,7 @@
             this.textBox1.Size = new System.Drawing.Size(185, 35);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Enter_KeyPress);
             // 
             // errorProvider1
             // 
